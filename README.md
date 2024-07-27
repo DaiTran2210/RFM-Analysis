@@ -1,6 +1,6 @@
 # RFM-Analysis (Python)
 ## I. Introduction
-## Why RFM?
+### Why RFM?
 - RFM is a marketing analysis technique that stands for Recency, Frequency, and Monetary Value.
   - **Recency**: measures how recently a customer has made a purchase.
   - **Frequency**: measures how often a customer has made purchases.
@@ -21,3 +21,24 @@
 - **UnitPrice**: Unit price. Numeric, Product price per unit in sterling.
 - **CustomerID**: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
 - **Country**: Country name. Nominal, the name of the country where each customer resides.
+
+### Business Questions:
+- The Marketing Department needs to classify the segments of each customer to deploy each marketing program suitable for each customer group.
+- The Marketing Director also proposed a plan to use the RFM model in Python to segment customers, and then launch marketing campaigns to thank customers for supporting the company over the past time. As well as exploit potential customers to become loyal customers.
+- Suggestions to the Marketing and Sales team with the company's retail model, which of the three indicators R, F, and M should be most interested in?
+
+## II. Data Visualization with Python
+* Distribution of Recency
+![image](https://github.com/user-attachments/assets/052433e6-a109-4d1d-af83-f3ae41de6584)
+* Distribution of Frequency
+![image](https://github.com/user-attachments/assets/84704d8f-fef2-4450-bc5a-b9c4f87b77bc)
+* Distribution of Monetary
+![image](https://github.com/user-attachments/assets/f6644b1e-6ad0-4488-805f-9d9eb7f4f03e)
+* RFM Segments of Customer Count
+![image](https://github.com/user-attachments/assets/603fc638-dcf6-47bd-9bef-1207b6daa2eb)
+* RFM Segments of Total Sales
+![image](https://github.com/user-attachments/assets/6b423a20-6b86-4e93-8422-7dd3927a5a65)
+
+
+
+
