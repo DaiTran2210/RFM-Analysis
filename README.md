@@ -1,31 +1,37 @@
 # RFM-Analysis (Python)
 ## I. Introduction
 ### Why RFM?
-- RFM is a marketing analysis technique that stands for Recency, Frequency, and Monetary Value.
-  - **Recency**: measures how recently a customer has made a purchase.
-  - **Frequency**: measures how often a customer has made purchases.
-  - **Monetary Value**: measures the total amount of money a customer has spent on purchases.
-- RFM is used to identify and categorize customers based on their purchasing behavior and how recently and frequently they have made purchases, as well as the monetary value of those purchases.
+- RFM stands for Recency, Frequency, and Monetary Value. It's a marketing analysis technique used to understand customer behavior.
+
+  - **Recency**: How recently a customer made a purchase.
+  - **Frequency**: How often a customer makes purchases.
+  - **Monetary Value**: How much money a customer has spent.
+- RFM helps identify and categorize customers based on their buying habits and spending.
+
+
 ### How?
-- In RFM analysis, customers are scored based on three factors (Recency - how recently, Frequency - how often, Monetary - how much), then labeled based on the combination of RFM scores
+- Customers are scored based on those three factors (Recency, Frequency, Monetary), and then labeled according to their RFM scores.
 ### Reference
 - [RFM Analysis For Successful Customer Segmentation](https://www.putler.com/rfm-analysis)
 
-### This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+### This dataset includes all transactions from 01/12/2010 to 09/12/2011 for a UK-based online retail store that sells unique all-occasion gifts. Most customers are wholesalers.
 
-- **InvoiceNo**: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'C', it indicates a cancellation.
-- **StockCode**: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
-- **Description**: Product (item) name. Nominal.
-- **Quantity**: The quantities of each product (item) per transaction. Numeric.
-- **InvoiceDate**: Invoice Date and time. Numeric, the day and time when each transaction was generated.
-- **UnitPrice**: Unit price. Numeric, Product price per unit in sterling.
-- **CustomerID**: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
-- **Country**: Country name. Nominal, the name of the country where each customer resides.
+
+- **InvoiceNo**:  A 6-digit number unique to each transaction. If it starts with 'C', it's a cancellation.
+- **StockCode**: A unique 5-digit code for each product.
+- **Description**: The name of the product.
+- **Quantity**: Number of products per transaction.
+- **InvoiceDate**: The date and time when the transaction happened.
+- **UnitPrice**: Price per unit in sterling.
+- **CustomerID**: A 5-digit number unique to each customer.
+- **Country**: The country where the customer lives.
 
 ### Business Questions:
-- The Marketing Department needs to classify the segments of each customer to deploy each marketing program suitable for each customer group.
-- The Marketing Director also proposed a plan to use the RFM model in Python to segment customers, and then launch marketing campaigns to thank customers for supporting the company over the past time. As well as exploit potential customers to become loyal customers.
-- Suggestions to the Marketing and Sales team with the company's retail model, which of the three indicators R, F, and M should be most interested in?
+- The Marketing Department needs to classify customer segments to tailor each marketing program to the right group.
+
+- The Marketing Director suggests using the RFM model in Python to segment customers. This will help launch marketing campaigns to thank current customers and turn potential ones into loyal customers.
+
+- For the Marketing and Sales team: with our retail model, which of the three indicators—Recency, Frequency, and Monetary—should we focus on the most?
 
 ## II. Data Visualization with Python
 * Distribution of Recency
@@ -42,33 +48,37 @@
 
 ## III. Insights
 - Customer Behavior Insights:
-  -  The most critical indicators for SuperStore are Frequency (F) followed by Recency (R). Many customers make only one or two purchases, while very few become long-term buyers (8-9 times or more). This suggests that customer retention needs improvement.
+  -  The key metrics for SuperStore are Frequency (F) and Recency (R). Most customers make only one or two purchases, and few become long-term buyers (8-9 times or more). This indicates a need to improve customer retention.
 - Customer Segmentation:
-  - The company primarily deals with “New Customers,” followed by “Hibernating Customers” and “Lost Customers.” Again, emphasizing the importance of the Frequency (F) index.
+  - The company primarily deals with “New Customers,” followed by “Hibernating Customers” and “Lost Customers.” This highlights the importance of the Frequency (F) metric.
 - Revenue and Profit:
-  - The highest revenue and profit come from “New Customers.”
+  - The highest profit and rev come from “New Customers.”
 - Regional Analysis:
   - The East region has the lowest revenue compared to the other three regions.
 - Top States:
-  - California, Texas, and Illinois have the highest order volumes compared to Florida.
+  - California, Texas, and Illinois have the highest order volumes, while Florida trails behind.
 - Customer Types:
-  - Consumers account for 52%, Corporate customers for 30%, and Home Office customers for the remaining share.
+  - Consumers make up 52%, Corporate customers account for 30%, and Home Office customers cover the rest.
 - Popular Categories:
-  - “Office Supplies” account for 60% of orders, followed by “Furniture.”
+  - “Office Supplies” dominate with 60% of orders, followed by “Furniture.”
 - Key Subcategories:
-  - The main subcategories are Paper (14%), Binders (15%), Art (9%), and Phones and Storage (8%).
+  - The main subcategories are Art (9%), Paper (14%), Binders (15%), and Phones and Storage (8%).
 ## IV. Recommendations
-To address these insights, SuperStore should consider the following strategies:
+To put these insights into action, here are some strategies for SuperStore:
+
+
 
 - Retaining New Customers:
-  - Send personalized welcome emails to new customers after their first purchase.
-  - Encourage one-time buyers to make a second purchase through targeted email marketing.
-  - Offer special discounts or promotions to incentivize return visits.
-  - For high-value customers, express gratitude and introduce a loyalty program.
+  - Send personalized welcome emails after their first purchase.
+
+
+  - Use targeted email marketing to encourage one-time buyers to make a second purchase.
+  - Offer special discounts or promotions to bring them back.
+  - For high-value customers, show gratitude and introduce a loyalty program.
 - Promoting Hibernating Customers:
-  - Reach out to hibernating customers with win-back emails or personalized offers.
-  - Tailor discounts based on their past purchases.
-  - Engage multiple-purchase customers with email campaigns showcasing new products.
+  - Send win-back emails or personalized offers to those who haven't shopped in a while.
+  - Tailor discounts based on their previous purchases.
+  - Keep multiple-purchase customers engaged with email campaigns that showcase new products.
   - Highlight new offerings to high-value customers who haven’t purchased recently.
 - Targeted Marketing:
   - Develop a marketing strategy focused on the “Consumer” segment, particularly in states like California, Texas, and Illinois, compared to Florida.
